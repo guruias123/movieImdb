@@ -1,0 +1,68 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.movie-detail{
+    width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        padding: 10px;
+        background-color: rgb(65, 63, 63);
+        position: relative;
+        color: white;
+        border-radius: 10px;
+        gap: 20px;
+}
+
+.details{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.poster{
+    border-radius: 10px;
+    height: 22rem;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(240, 140, 140);
+}
+
+.plot{
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+}
+
+.imdbid{
+    color: yellow;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 862px) {
+    .movie-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .poster{
+        width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    .poster{
+        width: 100px;
+        height: 150px;
+    }
+  }
+
